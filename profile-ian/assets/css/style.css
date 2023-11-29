@@ -1,3 +1,8 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+@import url("https://cdn.jsdelivr.net/npm/@mdi/font/css/materialdesignicons.min.css");
+
+
 .profile-pic {
   position: relative;
   max-width:130px;
