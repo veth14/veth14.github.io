@@ -1,69 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/index.css">
-    <title>Design</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <script src="./main.js" defer></script>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <title>Home Page</title>
 </head>
-
 <body>
-    <header class="page-header">
-        <div class="main-header px-1">
-            <div class="logo">
-                <h1>Portfolio</h1>
+
+    <!-- =============================== NAVBAR ============================ -->
+    <nav>
+        <div class="container nav_container">
+            <a href="#"><h4>Introduction to Computing</h4></a>
+            <ul class="nav_menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#categories">Learn More</a></li>
+                <li><a href="#courses">About us</a></li>
+            </ul>
+            <button id="open-menu-btn"><i class="fa-solid fa-bars"></i></button>
+            <button id="close-menu-btn"><i class="fa-solid fa-xmark"></i></button>
             </div>
-            <nav>
-                <ul id="addClass">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li class="dropdown">
-                        <a href="#">People</a>
-                        <div class="dropdown-content">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
-                        </div>
-                    </li>
+        </div>
+    </nav>
+     <!-- =============================== NAVBAR END ============================ -->
+
+     <!-- ================================== HEADER START ============================ -->
+     
+     <header>
+        <div class="container header_container" id="home">
+            <div class="header_left">
+                <h1>Introduction to Computing</h1>
+                <p>Welcome to our Website for CC101 where innovation meets design. Explore a seamless blend of HTML, CSS, and JavaScript craftsmanship, delivering an interactive and visually stunning online experience. Dive into a world of creativity and functionality, meticulously curated to captivate and inspire. Join us on a journey of discovery as we redefine the art of web development.</p>
+            </div>
+
+
+            <div class="header_right">
+                <div class="header_right-img">
+                    <img src="./images/main.png" alt="">
+                </div>
+            </div>
+        </div>
+     </header>
+     <!-- ================================== HEADER END ============================ -->
+
+
+
+     <!-- ================================== CATEGORIES START ============================ -->
+
+     <section class="categories" id="categories">
+        <div class="container categories_container">
+            <div class="categories_left">
+                <h1>Learn More</h1>
+                <p>Welcome to our Website, a dynamic and visually captivating online space crafted with the power of HTML, CSS, and JavaScript. 
+                    Immerse yourself in a seamless user experience as you navigate through our thoughtfully designed pages. 
+                    From the elegant styling with CSS to the interactive functionalities 
+                    powered by JavaScript, our website is a testament to the art and science of web development.</p>
+                <a href="#home" class="btn">Learn More</a>
+            </div>
+
+            <div class="categories_right">
+                
+                <article class="category">
+                    <span class="category_icon"><i class="fa-brands fa-html5"></i></span>
+                    <h5>HTML</h5>
+                    <p>HTML, or HyperText Markup Language, is the backbone of the digital world. As the foundational language of the web, HTML provides the structural framework that shapes the content you see on your favorite websites. Through a series of tags and elements, HTML allows developers to define the hierarchy and organization of information, whether it's text, images, or multimedia.</p>
+                </article>
+
+                <article class="category">
+                    <span class="category_icon"><i class="fa-brands fa-css3"></i></span>
+                    <h5>CSS</h5>
+                    <p>CSS, the design language of the web, is the silent orchestrator behind our website's layout and aesthetics. It shapes the colors, fonts, and spacing, ensuring a consistent and polished appearance across every page. Responsive design is our mantra, and CSS is the tool that adapts our content gracefully to the myriad of devices in the digital landscape.</p>
+                </article>
+
+                <article class="category">
+                    <span class="category_icon"><i class="fa-brands fa-js"></i></span>
+                    <h5>JavaScript</h5>
+                    <p>JavaScript, the dynamic and versatile programming language that breathes life into the web. As the backbone of interactive and engaging web experiences, JavaScript empowers websites to go beyond static content. Whether it's validating user inputs, creating responsive interfaces, or enabling real-time updates, JavaScript is the driving force behind the interactivity that users love.</p>
+                </article>
+
+            </div>
+        </div>
+     </section>
+
+     <!-- ================================== CATEGORIES END ============================ -->
+
+
+     <!-- ================================== COURSES START ============================ -->
+
+     <section class="courses" id="courses">
+        <h2>About Us</h2>
+
+        <div class="container courses__container">
+            <article class="course">
+                <div class="course__image">
+                    <img src="./images/joyprofile.jpg" alt="">
+                </div>
+                <div class="course__info">
+                    <h4>Nicole Joy Quiminiano</h4>
+                    <p>Hello, my name is Nicole Joy Quiminiano, and I am a collaborative, adaptive individual with a strong dedication to compassion who is willing to engage in meaningful talks and joint ventures.</p>
+                    <a href="/profile-nicole/index.html" class="btn btn-primary">Learn More</a> 
+                </div>
+            </article>
+            
+            <article class="course">
+                <div class="course__image">
+                    <img src="./images/profile.jpg" alt="">
+                </div>
+                <div class="course__info">
+                    <h4>Ian Angelo Valmores</h4>
+                    <p>I am Ian Angelo Valmores, currently enrolled as a student at Quezon City University. My passion lies in the field of coding.
+                    </p>
+                    <a href="/profile-ian/index.html" class="btn btn-primary">Learn More</a> 
+                </div>
+            </article>
+            
+            <article class="course">
+                <div class="course__image">
+                    <img src="./images/kierprofile.jpg" alt="">
+                </div>
+                <div class="course__info">
+                    <h4>Kier Laurence Atienza</h4>
+                    <p>I'm Kier Laurence Atienza, driven by ambitious goals, I am determined and aspiring to become a skilled programmer.</p>
+                    <a href="/profile-kier/index.html" class="btn btn-primary">Learn More</a> 
+                </div>
+            </article>
+
+            <article class="course">
+                <div class="course__image">
+                    <img src="./images/aliprofile.jpg" alt="">
+                </div>
+                <div class="course__info">
+                    <h4>Khalid Ali</h4>
+                    <p>Hello, I am Khalid Ali, a passionate I.T. student here in Quezon City University. I horned my skills in programming on our beloved school.
+                    </p>
+                    <a href="/profile-ali/index.html" class="btn btn-primary">Learn More</a> 
+                </div>
+            </article>
+
+            <article class="course">
+                <div class="course__image">
+                    <img src="./images/graceprofile.jpg" alt="">
+                </div>
+                <div class="course__info">
+                    <h4>Grace Algordo</h4>
+                    <p>I'm a highly motivated and determined person who can manage pressure and work under a minimum supervision</p>
+                    <a href="/profile-grace/index.html" class="btn btn-primary">Learn More</a> 
+                </div>
+            </article>
+
+            <article class="course">
+                <div class="course__image">
+                    <img src="./images/renaceprofile.jpg" alt="">
+                </div>
+                <div class="course__info">
+                    <h4>Renace Tehing</h4>
+                    <p>Hello! I am Renace Tehing, a BSIT (Bachelor of Science in Information Technology) student at Quezon City University (QCU), currently navigating the exciting realm of technology and learning.</p>
+                    <a href="/profile-renace/index.html" class="btn btn-primary">Learn More</a> 
+                </div>
+            </article>
+            
+        </div>
+     </section>
+
+     <!-- ================================== COURSES END ============================ -->
+
+
+
+     
+
+     <!-- ================================== Footer Start ============================ --> 
+
+
+     <footer class="footer" id="contact">
+        <div class="container footer__container">
+            <div class="footer__1">
+                <a href="#home" class="footer__logo">
+                    <h4></h4>
+                </a>
+            </div>
+
+            <div class="footer__2">
+                <h4>Permalinks</h4>
+                <ul class="permalink">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#categories">Learn More</a></li>
+                    <li><a href="#courses">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
-                <div class="menu">
-                    <i class="bi bi-list"></i>
-                </div>
-                <div class="nav-icon">
-                    <div><i class="bi bi-search"></i></div>
-                    <button>
-                        <img src="./assets/img/toggler.svg" alt="">
-                    </button>
-                </div>
-            </nav>
-        </div>
-    </header>
-    <section class="section-1" style="background-image: url('assets/img/hero-bg.png');">
-        <div style="background: #000000e6;">
-            <div class="section-1-bg">
+            </div>
+
+            <div class="footer__3">
+                <h4>Privacy</h4>
+                <ul class="privacy">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__4">
+                <h4>Contact us</h4>
                 <div>
-                    <h1 class="trans-text-bg">WEB<br><span class="trans-text">HOSTING</span> <i>PROJECT</i></h1>
+                    <p>+977 621 8486 (Globe)</p>
+                    <p>vianangelo.14@gmail.com</p>
                 </div>
-                <div class="img">
-                    <img src="./assets/img/hero-right.png" alt="">
-                </div>
-            </div>
 
-            <div class="section-2 px-1">
-                <img src="./assets/img/wepik-export-20231126110422UQSh.jpeg" alt="">
-
-                <div class="social">
-                    <a href="#"><i class="bi bi-facebook"></i> <span>Facebook</span></a>
-                    <a href="#"><i class="bi bi-twitter"></i> <span>Twitter</span></a>
-                    <a href="#"><i class="bi bi-instagram"></i> <span>Instagram</span></a>
-                    <a href="#"><i class="bi bi-github"></i> <span>Github</span></a>
-                </div>
+                <ul class="footer__socials">
+                    <li><a href="https://www.facebook.com/vianangelo14"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/itsss.iannn14/"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/ian-angelo-valmores-89aa8423a/?originalSubdomain=ph"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/veth14"><i class="fa-brands fa-github"></i></a></li>
+                </ul>
             </div>
         </div>
-    </section>
+        <div class="footer__copyright">
+            <small>Copyright 2023 &copy; Designed & Developed by <a href="https://github.com/veth14">Ian Angelo Valmores</a> </small>
+        </div>
+     </footer>
 
-    <script src="./assets/js/index.js"></script>
+     <!-- ================================== Footer Start ============================ --> 
+     
+     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+     <script>
+        var swiper = new Swiper(".mySwiper",{
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            },
+            //when Window is >= 600px
+            breakpoints: {
+                600: {
+                    slidesPerView: 2,
+                }
+            }
+        });
+     </script>
 </body>
-
 </html>
